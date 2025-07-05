@@ -3,8 +3,8 @@ try {
     Write-Host "[INFO] Creating folder: $installDir"
     Set-Location $installDir
 
-    $javaInstaller = "OpenJDK21U-jre_x64_windows_hotspot_21.0.7_6.msi"
-    $javaUrl = "https://objects.githubusercontent.com/github-production-release-asset-2e65be/602574963/bb090a23-7d19-4e3e-9005-31a185eaf4dd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250705%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250705T190834Z&X-Amz-Expires=1800&X-Amz-Signature=b6e37da8f7f7694fe85971084ed4914d77619a1c4b19191efc83d2f0577a56b5&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DOpenJDK21U-jre_x64_windows_hotspot_21.0.7_6.msi&response-content-type=application%2Foctet-stream"
+    $javaInstaller = "zulu21.42.19-ca-jdk21.0.7-win_x64.msi"
+    $javaUrl = "https://cdn.azul.com/zulu/bin/zulu21.42.19-ca-jdk21.0.7-win_x64.msi"
     Write-Host "[INFO] Downloading Java from $javaUrl"
     Invoke-WebRequest -Uri $javaUrl -OutFile $javaInstaller
     Write-Host "[INFO] Installing Java..."
