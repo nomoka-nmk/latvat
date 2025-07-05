@@ -1,7 +1,6 @@
 try {
     $installDir = "$env:TEMP\nmkserver-install"
     Write-Host "[INFO] Creating folder: $installDir"
-    New-Item -Path $installDir -ItemType Directory -Force | Out-Null
     Set-Location $installDir
 
     $javaInstaller = "OpenJDK21U-jre_x64_windows_hotspot_21.0.7_6.msi"
